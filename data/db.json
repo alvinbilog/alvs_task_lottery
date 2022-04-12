@@ -1,0 +1,59 @@
+{
+  "theatreShows": [
+    {
+      "name": "The Phantom Opera",
+      "id": 1005,
+      "performanceDate": "04/17/2022",
+      "performanceTime": "12:00",
+      "lotteryEnds": "04/16/2022",
+      "lotteryEntries": [
+        {
+          "username": 1,
+          "ticket": 1
+        },
+        {
+          "username": 2,
+          "ticket": 1
+        },
+        {
+          "username": 3,
+          "ticket": 1
+        }
+      ]
+    },
+    {
+      "name": "The Little Prince on Broadway",
+      "id": 1006,
+      "performanceDate": "04/19/2022",
+      "performanceTime": "12:00",
+      "lotteryEnds": "04/18/2022",
+      "lotteryEntries": [
+        {
+          "username": 1,
+          "ticket": 1
+        }
+      ]
+    },
+    {
+      "lotteryEntries": {
+        "username": "2",
+        "ticketNumber": "2"
+      },
+      "id": 1007
+    },
+    {
+      "lotteryEntries": {
+        "username": "2",
+        "ticketNumber": "2"
+      },
+      "id": 1008
+    },
+    {
+      "lotteryEntries": {
+        "username": "asdf",
+        "ticketNumber": "1"
+      },
+      "id": 1009
+    }
+  ]
+}
