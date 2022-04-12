@@ -8,15 +8,15 @@
       "lotteryEnds": "04/16/2022",
       "lotteryEntries": [
         {
-          "username": 1,
+          "username": "peashooter45",
           "ticket": 1
         },
         {
-          "username": 2,
+          "username": "Alvs",
           "ticket": 1
         },
         {
-          "username": 3,
+          "username": "kim03",
           "ticket": 1
         }
       ]
@@ -29,31 +29,10 @@
       "lotteryEnds": "04/18/2022",
       "lotteryEntries": [
         {
-          "username": 1,
+          "username": "dd2",
           "ticket": 1
         }
       ]
-    },
-    {
-      "lotteryEntries": {
-        "username": "2",
-        "ticketNumber": "2"
-      },
-      "id": 1007
-    },
-    {
-      "lotteryEntries": {
-        "username": "2",
-        "ticketNumber": "2"
-      },
-      "id": 1008
-    },
-    {
-      "lotteryEntries": {
-        "username": "asdf",
-        "ticketNumber": "1"
-      },
-      "id": 1009
     }
   ]
 }

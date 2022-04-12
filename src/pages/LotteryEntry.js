@@ -14,7 +14,7 @@ const LotteryEntry = () => {
         <div>
           <h2>
             {show.lotteryEntries.map(LotteryEntry => (
-              <h2>{LotteryEntry.ticket}</h2>
+              <h2>{LotteryEntry.username}</h2>
             ))}
           </h2>
         </div>

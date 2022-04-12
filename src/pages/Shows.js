@@ -17,6 +17,7 @@ const Shows = ({ showDatas }) => {
     console.log(showId);
     console.log(ticketNumber);
     console.log(username);
+
     postData({
       lotteryEntries: {
         username: username,
