@@ -10,27 +10,35 @@ const Shows = ({ showDatas }) => {
   const [showId, setShowId] = useState("");
   const [ticketNumber, setTicketNumber] = useState("");
   const [username, setUsername] = useState("");
-  // const [lotteryEntry, setLotteryEntry] = useState([]);
 
-  const handleSubmit = e => {
+  const handleSubmit = (e, show) => {
     e.preventDefault();
-    console.log(showId);
-    console.log(ticketNumber);
-    console.log(username);
+    //check if user already exist in the lottery entries
+    const existingUser = show.lotteryEntries.find(u => u.username === username);
+    if (existingUser) {
+      alert(`User ${username} already entered lottery`);
+    } else {
+      //prepare data to be submitted
+      show.lotteryEntries.push({
+        username,
+        ticketNumber,
+      });
+    }
 
-    postData({
-      lotteryEntries: {
-        username: username,
-        ticketNumber: ticketNumber,
-      },
-    });
+    const result = postData(show);
+    if (result.status === 200) {
+      alert(`User ${username} added to lottery show!`);
+    }
+    // else {
+    //   alert("An error occured during request");
+    // }
   };
 
   return (
     <div className="Shows">
       {showDatas.map(show => (
         <div key={show.id} className="shows-container">
-          <form onSubmit={handleSubmit}>
+          <form onSubmit={e => handleSubmit(e, show)}>
             <h1>{show.name}</h1>
             <label>
               <span>Performance Date:</span>

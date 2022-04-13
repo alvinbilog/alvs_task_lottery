@@ -6,10 +6,20 @@ export const useFetch = (url, method = "GET") => {
   const [error, setError] = useState(null);
   const [options, setOptions] = useState(null);
 
-  const postData = postData => {
-    setOptions({
-      method: "POST",
+  // const postData = postData => {
+  //   setOptions({
+  //     method: "POST",
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //     },
+  //     body: JSON.stringify(postData),
+  //   });
+  // };
+  const postData = async postData => {
+    return await fetch(`http://localhost:3000/theatreShows/${postData.id}`, {
+      method: "PUT",
       headers: {
+        Accept: "application/json",
         "Content-Type": "application/json",
       },
       body: JSON.stringify(postData),
